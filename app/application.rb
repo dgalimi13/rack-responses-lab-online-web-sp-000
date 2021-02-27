@@ -3,14 +3,14 @@ class Application
   def call(env)
     resp = Rack::Response.new
     
-    current_time = time.now
+    current_time = Time.now
     
  
  
-    if num_1==num_2 && num_2==num_3
-      resp.write "You Win"
+    if current_time =< 12
+      resp.write "Good Morning!"
     else
-      resp.write "You Lose"
+      resp.write "Good Afternoon!"
     end
  
     resp.finish
