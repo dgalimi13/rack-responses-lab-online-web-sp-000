@@ -3,9 +3,8 @@ class Application
   def call(env)
     resp = Rack::Response.new
     
-    before_noon = Kernel.rand(1..20)
-    after_noon = Kernel.rand(1..20)
-    num_3 = Kernel.rand(1..20)
+    current_time = time.now
+    
  
  
     if num_1==num_2 && num_2==num_3
