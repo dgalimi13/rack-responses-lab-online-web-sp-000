@@ -1,5 +1,5 @@
 class Application
   
-  def 
+  def call
   
 end 
